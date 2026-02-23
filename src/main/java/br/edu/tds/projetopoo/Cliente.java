@@ -9,5 +9,27 @@ package br.edu.tds.projetopoo;
  * @author aluno
  */
 public class Cliente {
+    //Definição de atributos
+    private String nome;
+    private int idade;
+    private String cpf;
     
+    //Definição de construtores
+    public Cliente(){
+    
+    }  
+    
+    public Cliente(String n, int i,String cpf){
+        this.nome = n;
+        this.idade = i;
+        this.cpf = cpf;
+    }
+
+
+    public void imprimeDadosCliente() {
+        System.out.println("Nome.: " + this.nome);
+        System.out.println("Idade: " + this.idade);
+        System.out.println("CPF..: " + this.cpf);
+
+    }
 }
